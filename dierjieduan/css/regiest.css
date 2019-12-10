@@ -1,0 +1,260 @@
+body{background:#fff;}
+.margin{width:1190px;margin:0 auto;}
+
+#toubu{width:940px;margin:0 auto;margin-top:10px;position: relative;height:80px;}
+#toubu span{font-size:20px;line-height:28px;color:#000;margin-left:10px;position: absolute;top:15px;}
+
+#zhuti{background:#a845f9;width:100%;overflow: hidden;}
+#zhuti img{margin-left:45px;float:left;margin-top:45px;position: relative;}
+#zhuti .zhengti{width:365px;background:#fff;float:right;display:flex;flex-direction: column;padding:0 37px;padding-top:38px;margin-top:30px;margin-bottom:20px;}
+#zhuti .zhengti input{border:1px solid #a3a3a3;border-radius:6px;padding-left:50px;margin-top:20px;font:14px/48px "";color:#ccc;outline: none;}
+#zhuti .zhengti em{position:absolute;top:527px;left:974px;}
+#zhuti .zhengti #phone{background:url(https://icon.cnzz.com/img/pic1.gif) no-repeat 13px center;}
+#zhuti .zhengti #user{background:url(https://icon.cnzz.com/img/pic1.gif) no-repeat 13px center;}
+#zhuti .zhengti #pass{background:url(https://icon.cnzz.com/img/pic1.gif) no-repeat 13px center;}
+#zhuti .zhengti #queripass{background:url(https://icon.cnzz.com/img/pic1.gif) no-repeat 13px center;}
+#zhuti .zhengti #sryzm{background:url(https://icon.cnzz.com/img/pic1.gif) no-repeat 13px center;}
+#zhuti .zhengti .yzm{position: relative;}
+#zhuti .zhengti #zhuce{background:red;color:#fff;text-indent:-45px;font:20px/40px "";color:#fff;cursor: pointer;margin:15px 0;}
+#zhuti .zhengti .yzm span{display:inline-block;font:16px/50px "";width:120px;height:50px;color:#fff;background:#ccc;text-align:center;margin-left:10px;}
+#zhuti .zhengti .yzm b{font-size:12px;color:#666;position: absolute;top:30px;right:-35px;width:36px;height:36px;cursor: pointer;}
+#zhuti .zhengti #dlfs{display:flex;justify-content:space-between;}
+#zhuti .zhengti #szfs{margin:10px 0;}
+#zhuti .zhengti #szfs a{font:12px/20px "";color:#666;padding-left:20px;}
+#zhuti .zhengti #szfs a:nth-child(1){background:url(https://icon.cnzz.com/img/pic1.gif)  no-repeat left;}
+#zhuti .zhengti #szfs a:nth-child(2){background:url(https://icon.cnzz.com/img/pic1.gif)  no-repeat left;}
+#zhuti .zhengti #szfs a:nth-child(3){background:url(https://icon.cnzz.com/img/pic1.gif)  no-repeat left;}
+
+
+
+
+
+
+
+
+
+
+
+
+#resouci{background:#fff;padding-left:71px;padding-top:30px;}
+#resouci ul{display:flex;}
+#resouci ul li{font:12px/30px "";width:100px;height:30px;text-align:center;color:#333;background:#f3f3f3;}
+#resouci ul li.active{color:#fff;background:#999;}
+#resouci .hzhb{display:flex;margin-top:20px;display:block;}
+#resouci .yqlj{margin-top:20px;display:none;}
+#resouci .yqlj a{font:12px/14.4px "";color:#333;}
+#resouci .yqlj span{margin:0 7px;}
+#resouci .rsc{margin-top:20px;display:none;}
+#resouci .rsc a{font:12px/14.4px "";color:#333;margin-right:10px;color:#333;}
+
+#yg{background:#fff;margin:0;padding-top:20px;height:100%;}
+#yg ul{padding-bottom:30px;border-bottom:1px solid #ccc;}
+
+#sh{background:#fff;position: relative;}
+#sh ul{display:flex;}
+#sh ul li{width:152px;height:170px;padding-top:20px;}
+#sh ul li:nth-child(1){padding-left:70px;}
+#sh ul li h4{font:16px/20px "";color:#6e6e6e;margin-bottom:10px;}
+#sh ul li a{display:block;font:12px/20px "";color:#333;}
+#sh ul li a:hover{color:#ccc;}
+#sh .ewm{position:absolute;right:235px;top:20px;}
+
+#yejiao{background:#c80928;height:40px;display:flex;justify-content:center;}
+#yejiao a{color:#fff;font:12px/40px "";display:block;margin:0 10px;}
+#yejiao span{color:#fff;line-height:40px;}
+
+
+
+#jiewei{text-align:center;padding-top:20px;line-height:25px;color:#999;}
+#jiewei .gongan{margin:10px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

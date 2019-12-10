@@ -15,9 +15,14 @@
     <section id="youke" >
         <div class="margin clear">
             <div class="left">
+               <div class="weidl">
                 <span>您好！游客  欢迎来文具1号商城！</span>
-                <a href="" id="denlu-1">登录</a>
-                <a href="" id="zhuce-1">免费注册</a>
+                <a href="login.html" id="denlu-1">登录</a>
+                <a href="regiest.html" id="zhuce-1">免费注册</a>
+               </div>
+               <div class="yidl">
+                   <h3>欢迎<span>XXX</span>来到玩具一号<em>退出</em></h3>
+               </div>
             </div>
             <div class="right">
                 <a href="">商城首页</a>
@@ -476,12 +481,12 @@
                 <li>热搜词</li>
             </ul>
             <div>
-                <div class="hzhb">
+                <div class="hzhb gongtong">
                     <img src="http://images.wjyh.com/data/files/mall/partner/110.jpg"/>
                     <img src="http://images.wjyh.com/data/files/mall/partner/111.jpg" alt="">
                     <img src="http://images.wjyh.com/data/files/mall/partner/82.jpg" alt="">
                 </div>
-                <div class="yqlj">
+                <div class="yqlj gongtong">
                     <a href="">电子请柬</a>
                     <span>|</span>
                     <a href="">电子请柬</a>
@@ -549,7 +554,7 @@
                     <a href="">电子请柬</a>
                     <span>|</span>
                 </div>
-                <div class="rsc">
+                <div class="rsc gongtong">
                     <a href="">办公文具</a>
                     <a href="">办公文具</a>
                     <a href="">办公文具</a>
@@ -576,7 +581,7 @@
     </section>
 
     
-    <section id="yangguang">
+    <section id="yg">
         <div class="margin">
             <ul>
                 <li>
@@ -629,7 +634,42 @@
                                     <a href="">电子协议</a>
                                     <a href="">修改密码及地址</a>
                                 </li>
+                                <li>
+                                        <h4>新手指南</h4>
+                                        <a href="">免费注册</a>
+                                        <a href="">导购演示</a>
+                                        <a href="">清单采购</a>
+                                        <a href="">电子协议</a>
+                                        <a href="">修改密码及地址</a>
+                                    </li>
             </ul>
+            <img src="http://www.wjyh.com/views/images/down/r-ewm.png" class="ewm"/>
+        </div>
+    </section>
+
+    <section id="yejiao">
+        <a href="">首页</a>
+        <span>|</span>
+        <a href="">首页</a>
+        <span>|</span>
+        <a href="">首页</a>
+        <span>|</span>
+        <a href="">首页</a>
+        <span>|</span>
+        <a href="">首页</a>
+        <span>|</span>
+        <a href="">首页</a>
+    </section>
+
+    <section id="jiewei">
+        <div class="margin">
+            <p>Copyright © 2010-2020 上海易号网络科技有限公司wjyh.com 保留一切权利 沪ICP备13023872号 营业执照 <img src="http://images.wjyh.com/views/commimg/icon/police.png"/><a>沪公网安备 31010802001236号</a>></p>
+            <p>客服热线：4008-215-248 工作日时间：周一至周五 9:00-21:30<img src="https://icon.cnzz.com/img/pic1.gif"/></p>
+            <div class="gongan">
+                <img src="https://rr.knet.cn/static/images/logo/cnnic.png" alt="">
+                <img src="https://rr.knet.cn/static/images/logo/cnnic.png" alt="">
+                <img src="//images.wjyh.com/views/commimg/icon/6.jpg" alt="">
+            </div>
         </div>
     </section>
 
@@ -642,28 +682,28 @@
 <script src="../js/luochen.js"></script>
 <script>
 
-// class Hzhbxxk{
-//     constructor(){
-//         this.all=document.querySelectorAll("#resouci ul li")
-//         this.adiv=document.querySelectorAll("#resouci div div")
-//         this.load();
-//     }
-//     load(){
-//         var that = this;
-//         for(var i=0;i < this.all.length;i++){
-//             this.all[i].index = i;
-//             this.all[i].onclick=function(){
-//                 for(var j=0;j < that.all.length;j++){
-//                     that.all[j].className = "";
-//                     that.adiv[j].style.display="none"
-//                 }
-//                 that.all.className = "active";
-//                 that.adiv[this.index].style.display = "block"
-//             }
-//         }
-//     }
-// }
-// new Hzhbxxk();
+class Hzhbxxk{
+    constructor(){
+        this.all=document.querySelectorAll("#resouci ul li")
+        this.adiv=document.querySelectorAll("#resouci div .gongtong")
+        this.load();
+    }
+    load(){
+        var that = this;
+        for(var i=0;i < this.all.length;i++){
+            this.all[i].index = i;
+            this.all[i].onclick=function(){
+                for(var j=0;j < that.all.length;j++){
+                    that.all[j].className = "";
+                    that.adiv[j].style.display="none"
+                }
+                that.all[this.index].className = "active";
+                that.adiv[this.index].style.display = "block";
+            }
+        }
+    }
+}
+new Hzhbxxk();
     ////////////////////////////////////
 $(".imgbox").banner({
     items:$(".imgbox").find("img"),

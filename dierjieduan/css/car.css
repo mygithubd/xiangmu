@@ -276,24 +276,14 @@ nav #shu_nav .shu li:hover{
 }
 
 
-#spzt{}
-#spzt ul{display:flex;flex-wrap:wrap;width:1205px;margin:0 auto;}
-#spzt ul li{position: relative;width:224px;height:340px;border:3px solid #F5F5F5;display:flex;flex-direction: column;padding:4px;overflow:hidden;margin-right:3px;margin-top:10px;}
-#spzt ul li:hover{border:3px solid #c00;}
-#spzt ul li img{}
-#spzt ul li em{font:20px/30px "";color:#c00;}
-#spzt ul li a{font:12px/18px "";color:#666;white-space:nowrap;}
-#spzt ul li a:hover{color:red;}
-#spzt ul li b{font:12px/20px "";color:#999;margin-top:5px;}
-#spzt ul li b:hover{color:#c00;}
-#spzt ul li .mjs{text-align:center;position:absolute;top:280px;left:170px;width:49px;height:18px;border-radius:3px;border:1px solid #c00;font:12px/18px "";color:#c00;}
-#spzt ul li .jiaruche{border-radius:4px;cursor: pointer;width:60px;height:20px;background:burlywood;font:12px/17px "";color:#fff;text-align:center;position:absolute;top:323px;left:170px;}
-#spzt ul li span{display:inline-block;font:12px/32px "";color:#999;height:32px;border-top:1px solid #F5F5F5;margin-top:20px;margin-left:1px;}
-#spzt ul li span u{font:13px/32px "";color:#568396;font-weight:700px;}
-#spzt ul li span u:hover{color:#000;}
+#jiesuan{}
+#jiesuan table{margin-top:20px;}
 
-#qjs{margin-top:20px;}
-#qjs a{font:30px/30px "";color:red;position: absolute;right:170px;cursor: pointer;} 
+
+
+
+
+
 
 
 

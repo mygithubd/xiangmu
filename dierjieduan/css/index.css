@@ -188,90 +188,65 @@ nav #heng_nav .heng li img.x_img{
 }
 
 
-
 nav #shu_nav{
-    position:absolute;
+    width:190px;
+    float:left;
 }
 nav #shu_nav h2{
-    color:#fff;
-    background:#c40000;
-    width:185px;
-    height:40px;
     font:16px/40px "";
-    text-indent:15px;
+    color:#fff;
+    text-indent:30px;
+    width:200px;
+    height:40px;
 }
 nav #shu_nav .shu{
     background:#fff;
+    position: relative;
 }
 nav #shu_nav .shu li{
-    width:200px;
+
+}
+nav #shu_nav .shu li:hover{
+    background:red;
+}
+nav #shu_nav .shu li:hover span{
+    color:#fff;
+}
+nav #shu_nav .shu li span{
+    display:block;
+    width:190px;
     height:45px;
     font:14px/45px "";
     color:#62615f;
+    text-align:center;
 }
-nav #shu_nav .shu li b{
-    padding:10px 10px 10px 35px;
-}
-nav #shu_nav .shu li span{
-    padding-right:5px;
+nav #shu_nav .shu li span i{
     display:inline-block;
-    width:27px;
-    height:17px;
-    background:url(http://www.wjyh.com/views/images/top/icon_totle.png) no-repeat 0 0;
+    width:;
+    height:;
 }
-nav #shu_nav .shu li:nth-child(1) span{
-    background-position:-15px -154px;
-}
-nav #shu_nav .shu li:nth-child(2) span{
-    background-position:-15px -154px;
-}
-nav #shu_nav .shu li:nth-child(3) span{
-    background-position:-15px -178px;
-}
-nav #shu_nav .shu li:nth-child(4) span{
-    background-position:-15px -203px;
-}
-nav #shu_nav .shu li:nth-child(5) span{
-    background-position:-15px -232px;
-}
-nav #shu_nav .shu li:nth-child(6) span{
-    background-position:-15px -256px;
-}
-nav #shu_nav .shu li:nth-child(7) span{
-    background-position:-45px -23px;
-}
-nav #shu_nav .shu li:nth-child(8) span{
-    background-position:-161px -23px;
-}nav #shu_nav .shu li:nth-child(9) span{
-    background-position:-72px -23px;
-}
-nav #shu_nav .shu li:nth-child(10) span{
-    background-position:-98px -23px;
-}
-
-nav #shu_nav .shu li a{
-    color:#62615f;
-}
-nav #shu_nav .shu li .box{
+nav #shu_nav .shu li ul{
+    position:absolute;
     width:810px;
     height:450px;
     background:#fff;
-    position: absolute;
-    left:190px;
-    top:40px;
-    z-index:1;
     display:none;
+    z-index:99999;
+    top:0;
+    left:190px;
+    display:flex;
 }
-nav #shu_nav .shu li:hover .box{
-     display:block;
-} 
-nav #shu_nav .shu li:hover{
-    background:red url();
-    color:#fff;
+nav #shu_nav .shu li ul li{
+    font:12px/20px "";
+    color:#000;
+    height:20px;
+    margin-right:10px;
+    margin-top:5px;
 }
-
-
-
+nav #shu_nav .shu li ul li:hover{
+    background:none;
+    color:red;
+}
 
 
 #banner{

@@ -2,7 +2,6 @@ class List{
     constructor(){
         this.url = "../json/spliebiao-shuju.json";
         this.cont = document.querySelector("#spzt ul");
-        
         this.load()
         this.addEvent();
     }
@@ -41,6 +40,7 @@ class List{
     }
     setCookie(){
         this.goods = getCookie("goodsDECookie") ? JSON.parse(getCookie("goodsDECookie")) : [];
+        
         if(this.goods.length < 1){
             this.goods.push({
                 id:this.id,
@@ -50,6 +50,8 @@ class List{
             var onoff = true;
             for(var i=0;i < this.goods.length;i++){
                 if(this.goods[i].id === this.id){
+                    //this.id undefined
+                    console.log(1)
                     this.goods[i].num++;
                     onoff = false;
                 }
@@ -65,3 +67,74 @@ class List{
     }
 }
 new List;
+
+class tiaozhuanyemian{
+    constructor(){
+        this.ali=document.querySelector("#spzt ul");
+
+        this.tiao();
+    }
+    tiao(){
+        this.ali.addEventListener("dblclick",function(eve){
+            var e=eve || window.event;
+            var target = e.target || e.srcElement;
+            location.href="spxiangqing.html"
+        })
+    }
+}
+new tiaozhuanyemian();
+
+class Pdsfjrgwc{
+    constructor(){
+        this.qjs=document.querySelector("#qjs b");
+
+        this.load();
+    }
+    load(){
+        var that = this;
+        this.qjs.onclick=function(){
+            that.msg = getCookie("userMsg") ? JSON.parse(getCookie("userMsg")) : [];
+            for(var i=0;i < that.msg.length;i++){
+                if(that.msg[i].onoff == 1){
+                    location.href="car.html"
+                }else{
+                    location.href="login.html"
+                }
+            }
+        }
+    }
+}
+new Pdsfjrgwc();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

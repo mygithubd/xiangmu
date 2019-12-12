@@ -21,7 +21,6 @@ class Car{
         for(var i=0;i<this.res.length;i++){
             for(var j=0;j<this.goods.length;j++){
                 if(this.res[i].goodsId === this.goods[j].id){
-                    console.log(1)
                     str += `<tr index="${this.res[i].goodsId}">
                                 <td><input type="checkbox"></td>
                                 <td><img src="${this.res[i].img}"/></td>
@@ -31,9 +30,7 @@ class Car{
                                 <td class="delete">删除</td>
                             </tr>`;
                 } 
-                
             }
-           
         }
         this.tbody.innerHTML = str;
     }

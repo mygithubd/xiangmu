@@ -4,6 +4,7 @@ class List{
         this.cont = document.querySelector("#spzt ul");
         this.load()
         this.addEvent();
+        
     }
     load(){
         var that = this;
@@ -15,7 +16,7 @@ class List{
     display(){
         var str = ""
         for(var i=0;i<this.res.length;i++){
-            str += `<li index="${this.res[i].goodsId}">
+            str += `<li index="${this.res[i].goodsId}" >
                         <img src="${this.res[i].img}">
                         <em>${this.res[i].price}</em>
                         <a href="">${this.res[i].mingcheng}</a>
@@ -71,18 +72,49 @@ new List;
 class tiaozhuanyemian{
     constructor(){
         this.ali=document.querySelector("#spzt ul");
-
+    // this.cunyigecookie()
         this.tiao();
     }
     tiao(){
-        this.ali.addEventListener("dblclick",function(eve){
+        this.ali.addEventListener("click",function(eve){
             var e=eve || window.event;
             var target = e.target || e.srcElement;
             location.href="spxiangqing.html"
+            
         })
     }
+    // cunyigecookie(){
+        
+    //     // this.mag=[{
+    //     //     name:this.id
+    //     // }]
+    //     // setCookie("shuangjishiDEcookie",JSON.stringify(this.mag))
+    // }
 }
 new tiaozhuanyemian();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Pdsfjrgwc{
     constructor(){

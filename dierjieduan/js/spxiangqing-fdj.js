@@ -24,27 +24,6 @@ var afangdajing=document.getElementById("fangdajing")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Xrfdj{
     constructor(){
         this.cuxiaojia = document.querySelector("#cuxiaojia");
@@ -66,18 +45,13 @@ class Xrfdj{
         this.display();
     }
     display(){
+        console.log(this.goods)
         for(var i=0;i<this.res.length;i++){
             for(var j=0;j<this.goods.length;j++){
                 if(this.res[i].goodsId === this.goods[j].id){
                     this.cuxiaojia.innerHTML  = this.res[i].price;
                     this.sptpdly.src = this.res[i].img;
-                    this.spdmz = this.res[i].mingcheng;
-                    // this.getCookie
-                    // this.baocunmingzi1=this.goods[j].id
-                    // this.baocunmingzi2=this.goods[j].price
-                    // this.baocunmingzi3=this.goods[j].src
-                    // this.img.src=this.goods[j].src
-
+                    this.spdmz.innerHTML = this.res[i].mingcheng;
                 } 
             }
         }
@@ -85,14 +59,6 @@ class Xrfdj{
     }
 }
 new Xrfdj;
-
-
-
-
-
-
-
-
 
 
 
@@ -226,6 +192,44 @@ new Xrfdj;
                 }
                 return obj;
             }
+
+
+            class Ljjrgwc{
+                constructor(){
+                    this.oljjrgwc = document.querySelector("#ljjrgwc");
+                    this.oljqsplb = document.querySelector("#ljqsplb");
+                    this.jrgwc();
+                }
+                jrgwc(){
+                    this.oljjrgwc.onclick=(function(){
+                        location.href="car.html";
+                    });
+                    this.oljqsplb.onclick=(function(){
+                        location.href="spliebiao.html";
+                    })
+                }
+            }
+            new Ljjrgwc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

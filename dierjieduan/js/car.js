@@ -1,8 +1,11 @@
 class Car{
     constructor(){
+        this.allcheck = document.querySelector("#allcheck");
+        this.check = document.getElementsByClassName("check");
         this.url = "../json/spliebiao-shuju.json";
         this.tbody = document.querySelector("#jiesuan tbody");
         
+        this.pdgwcsfqx();
         this.addEvent();
         this.load()
     }
@@ -66,6 +69,13 @@ class Car{
             }
         }
         setCookie("goodsDECookie",JSON.stringify(this.goods))
+    }
+    pdgwcsfqx(){
+        if(this.allcheck.checked){
+            for(var i=0;i < this.check.length;i++){
+                this.check.[i].checked = true;
+            }
+        }
     }
 }
 

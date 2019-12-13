@@ -2,8 +2,11 @@ class List{
     constructor(){
         this.url = "../json/spliebiao-shuju.json";
         this.cont = document.querySelector("#spzt ul");
+        this.imgBox = document.querySelector("#imgBox");
         this.load()
         this.addEvent();
+        this.ndtpmz();
+        
         
     }
     load(){
@@ -66,32 +69,45 @@ class List{
         }
         setCookie("goodsDECookie",JSON.stringify(this.goods))
     }
+    ndtpmz(){
+        this.imgBox.addEventListener("click",function(eve){
+            var e = eve || window.event;
+            var target = e.target || e.srcElement;
+            if(target.parentNode.tagName == "LI"){
+                this.mag = [{
+                    id:target.parentNode.getAttribute("index")
+                }]
+                setCookie("Mymag",JSON.stringify(this.mag));
+            } 
+            location.href="spxiangqing.html"
+        })
+    }
 }
 new List;
 
-class tiaozhuanyemian{
-    constructor(){
-        this.ali=document.querySelector("#spzt ul");
-    // this.cunyigecookie()
-        this.tiao();
-    }
-    tiao(){
-        this.ali.addEventListener("click",function(eve){
-            var e=eve || window.event;
-            var target = e.target || e.srcElement;
-            location.href="spxiangqing.html"
+// class tiaozhuanyemian{
+//     constructor(){
+//         this.ali=document.querySelector("#spzt ul");
+//     // this.cunyigecookie()
+//         this.tiao();
+//     }
+//     tiao(){
+//         this.ali.addEventListener("click",function(eve){
+//             var e=eve || window.event;
+//             var target = e.target || e.srcElement;
+//             location.href="spxiangqing.html"
             
-        })
-    }
-    // cunyigecookie(){
+//         })
+//     }
+//     // cunyigecookie(){
         
-    //     // this.mag=[{
-    //     //     name:this.id
-    //     // }]
-    //     // setCookie("shuangjishiDEcookie",JSON.stringify(this.mag))
-    // }
-}
-new tiaozhuanyemian();
+//     //     // this.mag=[{
+//     //     //     name:this.id
+//     //     // }]
+//     //     // setCookie("shuangjishiDEcookie",JSON.stringify(this.mag))
+//     // }
+// }
+// new tiaozhuanyemian();
 
 
 

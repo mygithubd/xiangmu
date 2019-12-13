@@ -281,7 +281,10 @@ nav #shu_nav .shu li:hover{
 #fangdajing .fdjDEhezi .sBox{width:350px;height:350px;position: absolute;left:10px;top:10px;}
 #fangdajing .fdjDEhezi .sBox img{width:350px;height:350px;border:1px solid #333;position:absolute;}
 #fangdajing .fdjDEhezi .sBox span{display:none;background:#000;position:absolute;z-index:999;}
-#fangdajing .fdjDEhezi .bBox{position: absolute;left:400px;top:10px;width:350px;height:350px;overflow:hidden;display:none;z-index:9999;background:url(https://www.wjyh.com/imgserver2/goods/i08/gQ7N5w16492410545.jpg) no-repeat;}
+
+#fangdajing .fdjDEhezi .bBox{position: absolute;left:400px;top:10px;width:350px;height:350px;overflow:hidden;z-index:99999999;display:none;background-color:#fff;background-repeat:no-repeat;background-size:700px;}
+
+
 #fangdajing .fdjDEhezi .spjies{position: absolute;left:410px;top:20px;font:16px/16px "";color:#4b4a4a;}
 #fangdajing .fdjDEhezi .spjies h1{font:14px/14px "";color:#4b4a4a;}
 #fangdajing .fdjDEhezi .spjies .jiage{width:507px;height:86px;background:#ededed;margin-top:15px;padding:15px 20px;}

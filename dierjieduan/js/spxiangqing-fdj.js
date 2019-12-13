@@ -41,24 +41,25 @@ class Xrfdj{
         })
     }
     getCookie(){
-        this.goods = getCookie("goodsDECookie") ? JSON.parse(getCookie("goodsDECookie")) : [];
+        this.goods = getCookie("Mymag") ? JSON.parse(getCookie("Mymag")) : [];
         this.display();
     }
     display(){
-        console.log(this.goods)
         for(var i=0;i<this.res.length;i++){
             for(var j=0;j<this.goods.length;j++){
                 if(this.res[i].goodsId === this.goods[j].id){
+
                     this.cuxiaojia.innerHTML  = this.res[i].price;
                     this.sptpdly.src = this.res[i].img;
                     this.spdmz.innerHTML = this.res[i].mingcheng;
+                    bigArea.style.backgroundImage = `url(${this.res[i].img})`;
                 } 
             }
         }
         
     }
 }
-new Xrfdj;
+new Xrfdj();
 
 
 
@@ -130,6 +131,7 @@ new Xrfdj;
             wrap.onmouseenter = function() {
                 box.style.display = "block";
                 bigArea.style.display = "block";
+
                 var r = (wrap.clientWidth - box.clientWidth) / (800 - bigArea.clientWidth);
                 
                 document.onmousemove = function(e) {

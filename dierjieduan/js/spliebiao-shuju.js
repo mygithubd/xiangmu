@@ -55,7 +55,6 @@ class List{
             for(var i=0;i < this.goods.length;i++){
                 if(this.goods[i].id === this.id){
                     //this.id undefined
-                    console.log(1)
                     this.goods[i].num++;
                     onoff = false;
                 }
@@ -73,14 +72,14 @@ class List{
         this.imgBox.addEventListener("click",function(eve){
             var e = eve || window.event;
             var target = e.target || e.srcElement;
-            if(target.parentNode.tagName == "LI"){
+            if(target.tagName == "LI"){
                 this.mag = [{
-                    id:target.parentNode.getAttribute("index")
+                    id:target.getAttribute("index")
                 }]
                 setCookie("Mymag",JSON.stringify(this.mag));
             } 
             location.href="spxiangqing.html"
-        })
+        },false)
     }
 }
 new List;
@@ -108,27 +107,6 @@ new List;
 //     // }
 // }
 // new tiaozhuanyemian();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

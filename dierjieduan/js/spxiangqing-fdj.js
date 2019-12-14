@@ -2,26 +2,6 @@ var wrap = document.querySelector(".title-a");
 var box = document.querySelector(".title-a-1");
 var bigArea = document.querySelector(".title-b");
 var afangdajing=document.getElementById("fangdajing")
-// var cuxiaojia = document.querySelector("#cuxiaojia")
-// var sptpdly = document.querySelector("#sptpdly")
-// var spdmz  = document.querySelector("spdmz")
-
-// window.onload=function(){
-//     cuxiaojia.innerHTML=""
-// }
-
-// afangdajing.addEventListener("mousemove",function(eve){
-//     var e = eve || window.event;
-//     var target = e.target || e.srcElement;
-//     if(target.tagName == "IMG"){
-//        $(".title-a-1")[0].style.display = "block";
-//        $(".title-b")[0].style.display = "block";
-//     }
-// })
-
-
-
-
 
 
 class Xrfdj{
@@ -61,74 +41,7 @@ class Xrfdj{
 }
 new Xrfdj();
 
-
-
-/* <h2>商品详情</h2>
-            <div class="fdjDEhezi title">
-                <div class="sBox title-a">
-                    <img src="https://www.wjyh.com/imgserver2/goods/i08/gQ7N5w16492410545.jpg" alt="">
-                    <span class="title-a-1"></span>
-                </div>
-                <div class="bBox title-b"></div>
-
-                <div class="spjies">
-                    <h1>亚太森博 复印纸 A4 70克 5包/箱</h1>
-                    <div class="jiage">
-                        <div class="jiage-t">
-                            <div class="jiage-t-l">
-                                <span>促销<b>￥88.88</b></span>
-                                <span>价格<u>￥159.50</u></span>
-                            </div>
-                            <div class="jiage-t-r">查看评论</div>
-                        </div>
-                        <div class="jiage-b">
-                            <span>满就送</span>
-                            <i>江浙沪皖满88元包邮</i>
-                        </div>
-                    </div>
-                    <div class="peisong">
-                        <span>配送</span>
-                        <span>上海市市辖区静安区</span>
-                        <span>快递:0.00</span>
-                    </div>
-                    
-                    <div class="yangshi">
-                        <div class="ys">
-                            <span>颜色</span>
-                            <b>白色</b>
-                            <b>绿色</b>
-                            <b>蓝色</b>
-                        </div>
-                        <div class="bz">
-                                <span>包装</span>
-                                <b>5包/箱</b>
-                                <b>10包/箱</b>
-                                <b>15包/箱</b>
-                        </div>
-                    </div>
-                    <div class="gm">
-                            <i id="">立即购买</i>
-                            <i id="">加入购物车</i>
-                    </div>
-
-                    <div class="cn">
-                        <span>服务承诺:</span>
-                        <span>正品保障</span>
-                        <span>增票服务</span>
-                        <span>闪电发货</span>
-                        <span>七天无理由退货</span>
-                    </div>
-                </div> 
-            </div> */
-
-
-
-
-
-
-            
-            
-            wrap.onmouseenter = function() {
+   wrap.onmouseenter = function() {
                 box.style.display = "block";
                 bigArea.style.display = "block";
 
